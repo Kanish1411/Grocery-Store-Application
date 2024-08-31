@@ -1,18 +1,19 @@
 <template>
-  <div v-if="$store.state.checkl && $store.state.checkadmin">
+  <div v-if="$store.state.checkl && $store.state.checkadmin" class="parent">
     <Navbar showadHomeLink  showReqLink />
+    <center>
     <div class="margin-form">
-      <h1>Add Category Page</h1>
-   
+      <h1>Add Category Page</h1>  
+      <br>
       <form @submit.prevent="addCategory">
-        <label for="categoryName">Category Name:</label>
-        <input type="text" v-model="categoryName" id="categoryName" required />
+        <label class="h5" for="categoryName">Category Name</label>
+        <input type="text" class="form-control" v-model="categoryName" id="categoryName" required />
         <br />
         <button class="btn btn-primary" type="submit">Add Category</button>
       </form>
-
-      <br />
+      <br>
     </div>
+  </center>
   </div>
 </template>
 
@@ -104,7 +105,9 @@ export default {
 
 <style scoped>
 .margin-form {
-  margin: 40px;
+  margin: 20px;
+  width:20%;
+  height:30%; 
 }
 
 .message {

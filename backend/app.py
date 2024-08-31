@@ -256,9 +256,9 @@ def getitem():
 def getreq():
     q=Interactions.query.all()
     l=[]
-    for i in q:
-        l.append({"id":i.mg_id,"interaction":i.interaction})
-
+    if q:
+        for i in q:
+            l.append({"id":i.mg_id,"interaction":i.interaction})
     return l
 
 @app.route("/addc",methods=['GET','POST'])

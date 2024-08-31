@@ -7,9 +7,6 @@
       <router-link to="/register">
         <button class="btn btn-primary">Register</button>
       </router-link>
-      <router-link to="/about">
-        <button class="btn btn-primary">About</button>
-      </router-link>
     </div>
   </template>
   <script>

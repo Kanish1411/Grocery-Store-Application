@@ -19,9 +19,7 @@
       <li class="nav-item active"  v-if="showRegisterLink">
         <router-link to="/register" class="nav-link">Register</router-link>
       </li>
-      <li class="nav-item active"  v-if="showAboutLink">
-        <router-link to="/about" class="nav-link">About</router-link>
-      </li>
+
       <li class="nav-item active"  v-if="showAddcatLink">
         <router-link to="/addcat" class="nav-link">Add Category</router-link>
       </li>
@@ -57,10 +55,7 @@ export default {
       type: Boolean,
       default: false,
     },
-    showAboutLink: {
-      type: Boolean,
-      default: false,
-    },
+  
     showRegisterLink: {
       type: Boolean,
       default: false,

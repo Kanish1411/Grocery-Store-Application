@@ -2,7 +2,6 @@ import {createRouter, createWebHistory} from  'vue-router'
 import Login from '.\\components\\Login.vue'
 import Home from '.\\components\\Home.vue'
 import Register from '.\\components\\Register.vue'
-import About from '.\\components\\About.vue'
 import Userhome from '.\\components\\Userhome.vue'
 import Manager from '.\\components\\Manager.vue'
 import Admin from '.\\components\\Admin.vue'
@@ -27,10 +26,6 @@ const routes =[
     {
         path:"/register",
         component:Register
-    },
-    {
-        path:"/about",
-        component:About
     },
     {
         path:"/manager/:id",
